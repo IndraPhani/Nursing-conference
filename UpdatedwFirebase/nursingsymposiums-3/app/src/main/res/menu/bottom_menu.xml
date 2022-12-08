@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/id_conference"
+    android:enabled="true"
+    android:icon="@drawable/conference"
+    android:title="Conference"/>
+<item
+    android:id="@+id/id_myschedule"
+    android:enabled="true"
+    android:icon="@drawable/conference"
+    android:title="My Schedule"
+    />
+<item
+    android:id="@+id/id_about"
+    android:enabled="true"
+    android:icon="@drawable/conference"
+    android:title="About"/>
+<item
+    android:id="@+id/id_logout"
+    android:enabled="true"
+    android:icon="@drawable/conference"
+    android:title="Logout"/>
+</menu>

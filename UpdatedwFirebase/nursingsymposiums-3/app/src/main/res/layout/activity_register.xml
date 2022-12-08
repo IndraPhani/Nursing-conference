@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+    <ImageView
+        android:layout_width="@dimen/_150sdp"
+        android:src="@drawable/register"
+        android:id="@+id/id_login_profile"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="@dimen/_150sdp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Create your account"
+        app:layout_constraintTop_toBottomOf="@id/id_login_profile"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sdp"
+        android:id="@+id/text_create"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField"
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/_14sdp"
+        android:layout_marginLeft="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:hintTextColor="#757575"
+        android:layout_marginBottom="@dimen/_5sdp"
+         app:boxStrokeColor="#1277DC"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/text_create"
+        android:hint="name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/id_name"
+            android:textColor="@color/black"
+            android:hint="Enter Name"
+            android:textColorHint="#757575"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usernameoutlinedTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_14sdp"
+        android:layout_marginLeft="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:hintTextColor="#757575"
+        app:boxStrokeColor="#1277DC"
+
+        android:layout_marginBottom="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/outlinedTextField"
+        android:hint="UserName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/id_username"
+            android:hint="Enter UserName"
+            android:textColorHint="#757575"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordoutlinedTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginRight="@dimen/_14sdp"
+        android:layout_marginLeft="@dimen/_14sdp"
+        app:hintTextColor="#757575"
+        app:boxStrokeColor="#1277DC"
+
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/usernameoutlinedTextField"
+        android:hint="password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/id_password"
+            android:textColor="@color/black"
+            android:hint="Enter Password"
+            android:textColorHint="#757575"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/confirmpasswordoutlinedTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginRight="@dimen/_14sdp"
+        android:layout_marginLeft="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:hintTextColor="#757575"
+        app:boxStrokeColor="#1277DC"
+
+        android:layout_marginBottom="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/passwordoutlinedTextField"
+        android:hint="confirm password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/id_confirmpassword"
+            android:hint="Enter ConfirmPassword"
+            android:textColorHint="#757575"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="REGISTER"
+        android:id="@+id/register_btn"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/confirmpasswordoutlinedTextField"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/register_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/login_back"
+        android:text="Already have an account?"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/purple_500"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
